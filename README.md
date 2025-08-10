@@ -51,12 +51,11 @@ Application runs at: **`http://localhost:8081`**
 | PUT  | `/task_list/{task_list_id}`         |  update task list        |
 | DELETE | `/task_list/{task_list_id}`         | Delete task list                |
 
-### ✍️ Author Endpoints
+### ✍️ Task Endpoints
 | Method | Endpoint                | Description                |
 |--------|-------------------------|----------------------------|
-| POST   | `/authors`              | Create author              |
-| GET    | `/authors`              | Get all authors            |
-| GET    | `/authors/{id}`         | Get author by ID           |
-| PUT    | `/authors/{id}`         | Full update author         |
-| PATCH  | `/authors/{id}`         | Partial update author      |
-| DELETE | `/authors/{id}`         | Delete author              |
+| POST   | `/task_list/{task_list_id}/tasks`              | Create Task              |
+| GET    | `/task_list/{task_list_id}/tasks`              | Get all Task of specific Task List            |
+| GET    | `/task_list/{task_list_id}/{task_id}`         | Get Task by Task List ID and Task ID           |
+| PUT    | `/task_list/{task_list_id}/{task_id}`         | Full update of Task         |
+| DELETE | `/task_list/{task_list_id}/{task_id}`         | Delete Task              |
